@@ -1,0 +1,77 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body,
+html {
+  height: 100%;
+  width: 100%;
+}
+
+#container {
+  display: flex;
+  height: 100%;
+  width: 800px;
+  justify-content: center;
+  margin: auto;
+  flex-direction: column;
+}
+
+h3 {
+  margin: 0 auto;
+  font-size: 50px;
+  text-transform: uppercase;
+}
+
+#sort {
+  width: 30%;
+  font-size: 24px;
+  margin: 0 auto;
+  z-index: 2;
+  font-family: "Times New Roman", Times, serif;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+  font-size: 24px;
+}
+
+tr {
+  height: 50px;
+}
+
+th,
+td {
+  padding: 12px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 61px;
+}
+
+input[type="checkbox"] {
+  width: 100%;
+  padding: 0 4px;
+}
+
+input[type="text"] {
+  height: 100%;
+  width: 100%;
+  padding: 4px;
+  font-size: 20px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.emphasize {
+  text-transform: uppercase;
+  font-weight: 600;
+  width: 100%;
+  text-align: center;
+}

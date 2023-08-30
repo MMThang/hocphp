@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thanh toán</title>
+    <script src="jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="giohang.css" />
+  </head>
+  <body>
+    <div id="container">
+      <h3>Bán hàng</h3>
+      <select name="sort" id="sort" onchange="sortProduct(this)">
+        <option value="">Mức giá</option>
+        <option value="sm100">&#60;= 100</option>
+        <option value="between100500">100 - 500</option>
+        <option value="lg500">&#62;= 500</option>
+      </select>
+      <br />
+      <hr />
+      <br />
+      <table>
+        <tr>
+          <th>
+            <input type="checkbox" class="special-checkbox" />
+          </th>
+          <th>Hàng hóa</th>
+          <th>Đơn giá</th>
+          <th>Số lượng</th>
+          <th>Thành tiền</th>
+        </tr>
+        <tr>
+          <td>
+            <input
+              type="checkbox"
+              class="input-checkbox"
+              onclick="checkedVerify(this)"
+              onchange="onchangeCheckbox()"
+            />
+          </td>
+          <td>IPhone9</td>
+          <td class="value-holder">700</td>
+          <td class="center">
+            <input
+              type="text"
+              disabled
+              class="input-text"
+              onchange="onchangeUpdate(this)"
+              value="0"
+            />
+          </td>
+          <td><div class="total">0</div></td>
+        </tr>
+        <tr>
+          <td>
+            <input
+              type="checkbox"
+              class="input-checkbox"
+              onclick="checkedVerify(this)"
+            />
+          </td>
+          <td>Samsung</td>
+          <td class="value-holder">400</td>
+          <td class="center">
+            <input
+              type="text"
+              disabled
+              class="input-text"
+              onchange="onchangeUpdate(this)"
+              value="0"
+            />
+          </td>
+          <td><div class="total">0</div></td>
+        </tr>
+        <tr>
+          <td>
+            <input
+              type="checkbox"
+              class="input-checkbox"
+              onclick="checkedVerify(this)"
+            />
+          </td>
+          <td>Nokia</td>
+          <td class="value-holder">100</td>
+          <td class="center">
+            <input
+              type="text"
+              disabled
+              class="input-text"
+              onchange="onchangeUpdate(this)"
+              value="0"
+            />
+          </td>
+          <td><div class="total">0</div></td>
+        </tr>
+        <tr>
+          <td>
+            <input
+              type="checkbox"
+              class="input-checkbox"
+              onclick="checkedVerify(this)"
+            />
+          </td>
+          <td>Sony Xperia</td>
+          <td class="value-holder">450</td>
+          <td class="center">
+            <input
+              type="text"
+              disabled
+              class="input-text"
+              onchange="onchangeUpdate(this)"
+              value="0"
+            />
+          </td>
+          <td><div class="total">0</div></td>
+        </tr>
+        <tr>
+          <td>
+            <input
+              type="checkbox"
+              class="input-checkbox"
+              onclick="checkedVerify(this)"
+            />
+          </td>
+          <td>Motorola</td>
+          <td class="value-holder">180</td>
+          <td class="center">
+            <input
+              type="text"
+              disabled
+              class="input-text"
+              onchange="onchangeUpdate(this)"
+              value="0"
+            />
+          </td>
+          <td><div class="total">0</div></td>
+        </tr>
+        <tr>
+          <td>
+            <input
+              type="checkbox"
+              class="input-checkbox"
+              onclick="checkedVerify(this)"
+            />
+          </td>
+          <td>Oppo</td>
+          <td class="value-holder">600</td>
+          <td class="center">
+            <input
+              type="text"
+              disabled
+              class="input-text"
+              onchange="onchangeUpdate(this)"
+              value="0"
+            />
+          </td>
+          <td><div class="total">0</div></td>
+        </tr>
+        <tr>
+          <td>
+            <input
+              type="checkbox"
+              class="input-checkbox"
+              onclick="checkedVerify(this)"
+            />
+          </td>
+          <td>BPhone</td>
+          <td class="value-holder">90</td>
+          <td class="center">
+            <input
+              type="text"
+              disabled
+              class="input-text"
+              onchange="onchangeUpdate(this)"
+              value="0"
+            />
+          </td>
+          <td><div class="total">0</div></td>
+        </tr>
+        <tr>
+          <td colspan="4" class="emphasize">Tổng</td>
+          <td>
+            <div id="total" onchange="onchangeTotal(this)">0</div>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <script src="giohang.js"></script>
+  </body>
+</html>
